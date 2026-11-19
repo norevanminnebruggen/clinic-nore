@@ -36,3 +36,6 @@ footer {
 /* Phone width: keep fields inside the screen and let the menu wrap. */
 input, select, button { max-width: 100%; }
 nav { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; }
+
+/* Show the prices in bold green, so they are easy to find. */
+#prices + ul li { color: #0b6e4f; font-weight: 700; }
