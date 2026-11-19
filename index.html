@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<title>Saturday repair clinic</title>
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+<p>Campus Cycle repair clinic</p>
+<nav>
+<a href="#prices">Prices</a>
+<a href="#estimate">Estimate</a>
+<a href="#book">Book</a>
+</nav>
+</header>
+
+<main>
+<h1>We fix your bike on Saturday afternoon.</h1>
+
+<img src="images/bicycle.png" alt="A bicycle waiting to be repaired">
+
+<h2>When and where</h2>
+<p>Saturday, 15:00 to 17:00</p>
+<p>Workshop B, Student Centre</p>
+
+<h2 id="prices">Prices</h2>
+<ul>
+<li>A check: EUR 10</li>
+<li>Each small repair: EUR 5</li>
+<li>A full service: EUR 45</li>
+</ul>
+
+<h2 id="estimate">Estimate your price</h2>
+<label for="service">Service</label>
+<select id="service">
+<option value="10">A check</option>
+<option value="45">A full service</option>
+</select>
+
+<label for="repairs">Number of small repairs</label>
+<input id="repairs" type="number" min="0" step="1" value="0">
+
+<p>Your estimate: <output id="total">EUR 10</output></p>
+
+<h2 id="book">Book a slot</h2>
+<form id="booking">
+<label for="name">Name</label>
+<input id="name" type="text">
+
+<label for="slot">Time</label>
+<select id="slot">
+<option>15:00</option>
+<option>15:30</option>
+<option>16:00</option>
+<option>16:30</option>
+</select>
+
+<button type="submit">Book</button>
+</form>
+<p id="message" hidden>Nothing was sent. This page cannot book yet.</p>
+</main>
+
+<footer>
+<p>Campus Cycle - BW-45A6</p>
+</footer>
+
+</body>
+</html>
